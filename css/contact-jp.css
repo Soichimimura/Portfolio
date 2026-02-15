@@ -1,17 +1,17 @@
 :root{
-  --bg:#472f91;
+  --bg:#1E006D;
   --text:#fff200;
   --line:rgba(255,242,0,.22);
   --field-bg:rgba(71,47,145,.55);
   --field-border:rgba(255,242,0,.75);
   --shadow:rgba(0,0,0,.18);
   --btn:#fff200;
-  --btn-text:#472f91;
+  --btn-text:#1E006D;
 }
 
 
 .page-header {
-  background: #472f91;
+  background: #1E006D;
   padding: 0 40px ;
   border-bottom: 5px solid #fff200;
   margin-bottom: 0px;
@@ -110,7 +110,7 @@ animation-delay:0.2s;
   width: 160px;
   font-size: 20px;
   background: #fff200;
-  color: #472f91;
+  color: #1E006D;
   font-weight: bold;
   cursor: pointer;
   min-width: 0;   
@@ -226,7 +226,7 @@ body::before{
   inset:110px 0 0 0;
   pointer-events:none;
   z-index:0;
-  background:repeating-linear-gradient(to bottom, var(--line) 0 1px, transparent 1px 54px);
+  background:repeating-linear-gradient(to bottom, rgba(255,242,0,.43) 0 1px, transparent 1px 54px);
   opacity:.35;
 }
 
@@ -332,13 +332,13 @@ body::before{
   height:70px;
   border-radius:24px;
   background:#fff200;
-  color:#472f91;
+  color:#1E006D;
   font-weight:800;
   font-size:26px;
   letter-spacing:.55em;
   text-indent:.55em;
   border:3px solid #fff200;
-  box-shadow:0 0 0 4px #472f91;
+  box-shadow:0 0 0 4px #1E006D;
   cursor:pointer;
 }
 .btn:active{

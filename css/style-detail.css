@@ -6,7 +6,7 @@ html {
 
  body{
    margin: 0;
-   background: #472f91;
+   background: #1E006D;
    font-family:
   "Yu Gothic Medium",
   "Yu Gothic",
@@ -16,10 +16,10 @@ html {
 
     
 
-  background: #472f91;
+  background: #1E006D;
  }
 .page-header {
-  background: #472f91;
+  background: #1E006D;
   padding: 0 40px ;
   border-bottom: 5.5px solid #fff200;
   margin-bottom: 0px;
@@ -113,7 +113,7 @@ animation-delay:0.2s;
   width: 160px;
   font-size: 20px;
   background: #fff200;
-  color: #472f91;
+  color: #1E006D;
   font-weight: bold;
   cursor: pointer;
   min-width: 0;   
@@ -227,7 +227,7 @@ animation-delay:0.2s;
   border-bottom: 5.5px solid #fff200;
   padding: 1.5rem 0;
   overflow: hidden;
-  background:repeating-linear-gradient(to bottom, rgba(255,242,0,.08) 0 1px, transparent 1px 54px);
+  background:repeating-linear-gradient(to bottom, rgba(255,242,0,.15) 0 1px, transparent 1px 54px);
 
 }
 
@@ -263,7 +263,7 @@ animation-delay:0.2s;
    width: 100%;
   margin: 0 auto;
   font-family: var(--font-sans);
-  background:repeating-linear-gradient(to bottom, rgba(255,242,0,.08) 0 1px, transparent 1px 54px);
+  background:repeating-linear-gradient(to bottom, rgba(255,242,0,.15) 0 1px, transparent 1px 54px);
 
  }
 
