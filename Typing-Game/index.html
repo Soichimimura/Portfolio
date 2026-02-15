@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  
+ 
+  <link rel="stylesheet" href="../css/style-detail.css">
+   <link rel="stylesheet" href="./typing-game.css">
+
+  <title>Typing Game</title>
+</head>
+
+<body class="typing-page">
+
+  <header class="page-header wrapper">
+    <div class="header-inner">
+
+      <div class="logo">
+        <img src="../images/peco.png" alt="logo">
+      </div>
+
+      <div class="language">
+        <p class="language-title">LANGUAGE</p>
+        <div class="language-buttons">
+          <a href="index.html" class="lang-btn-en">ENGLISH</a>
+          <a href="index.html" class="lang-btn-jp">日本語</a>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <ul class="main-nav">
+          <li class="fade0"><a href="../html/whoami.html">Home</a></li>
+          <li class="fade1"><a href="../html/detail.html">Detail</a></li>
+          <li class="fade2"><a href="index.html">Works</a></li>
+          <li class="fade3"><a href="../html/Contact-jp.html">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="game-area">
+    <div class="game-shell">
+
+      <div id="tg-login">
+        <input id="tg-login-user" type="text" placeholder="Username" />
+        <input id="tg-login-pass" type="password" placeholder="Password" />
+        <button id="tg-login-btn" type="button">Login / Register</button>
+        <div id="tg-login-status"></div>
+      </div>
+
+      <div id="tg-game" style="display:none;">
+        <div>
+          <button id="tg-reset" type="button">Reset</button>
+          <button id="tg-logout" type="button" disabled>Logout</button>
+          <button id="tg-about" type="button">About</button>
+          <button id="tg-exit" type="button">Exit</button>
+        </div>
+
+        <div>
+          <span id="tg-player"></span>
+          <span id="tg-score"></span>
+          <span id="tg-best"></span>
+          <span id="tg-timer"></span>
+          <span id="tg-bonus"></span>
+        </div>
+
+        <select id="tg-time">
+          <option>30 sec</option>
+          <option>60 sec</option>
+        </select>
+
+        <div id="tg-word">Press Start</div>
+
+        <div class="input-row">
+          <input id="tg-input" type="text" disabled />
+          <button id="tg-start" type="button">Start</button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script type="module">
+    import { TypingGameApp } from "./typingGameApp.js";
+    TypingGameApp.mount({ dictionaryUrl: "./words.txt" });
+  </script>
+
+</body>
+</html>

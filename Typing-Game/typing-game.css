@@ -1,0 +1,198 @@
+
+.typing-page .page-header{
+  height: var(--header-h);
+  padding: 0 24px;
+  line-height: 1.2;
+}
+
+.typing-page .header-inner{
+  height: 100%;
+}
+
+.typing-page .logo img{
+  height: 95px;
+  width: auto;
+  transform: none;
+  
+}
+
+
+
+.typing-page{
+  background-color:#472f91;
+  background-image:repeating-linear-gradient(to bottom, rgba(255,242,0,.08) 0 1px, transparent 1px 54px);
+  color:#fff200;
+  box-sizing: border-box;
+  --header-h: 95px;
+   min-height: calc(100vh - var(--header-h));
+
+}
+
+.typing-page .language-title{
+  font-size: 14px;
+}
+
+.typing-page .lang-btn-en,
+.typing-page .lang-btn-jp{
+  font-size: 22px;
+}
+
+.typing-page .nav a{
+  font-size: 17px;
+}
+
+
+.game-area{
+  min-height:calc(100vh - 110px);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:36px 24px 60px;
+   overflow-x: hidden;
+}
+
+.game-shell{
+  width: 100%;
+  max-width: 1100px;
+}
+
+
+#tg-login,#tg-game{
+  width:100%;
+  padding:22px;
+  border-radius:18px;
+  background:rgba(0,0,0,.18);
+  backdrop-filter:blur(6px);
+  box-shadow:0 12px 30px rgba(0,0,0,.28);
+}
+
+#tg-login{
+  opacity: 0;
+  transform: translateY(10px);
+  animation: tgLoginIn 1.5s ease forwards;
+  animation-delay: 2.7s;
+}
+
+@keyframes tgLoginIn{
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+button{
+  font-size:18px;
+  padding:10px 14px;
+  margin-right:10px;
+  border:1px solid rgba(255,242,0,.55);
+  border-radius:12px;
+  background:rgba(255,242,0,.12);
+  color:#fff200;
+  cursor:pointer;
+  transition:transform .08s ease,background .18s ease,border-color .18s ease;
+}
+
+button:hover{
+  background:rgba(255,242,0,.2);
+  border-color:rgba(255,242,0,.8);
+}
+
+button:active{
+  transform:translateY(1px);
+}
+
+button:disabled{
+  opacity:.45;
+  cursor:not-allowed;
+}
+
+.input-row{
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+
+#tg-input{
+  font-size:26px;
+  padding:12px 14px;
+  width: auto;
+  box-sizing:border-box;
+  border-radius:14px;
+  border:1px solid rgba(255,242,0,.55);
+  background:rgba(0,0,0,.28);
+  color:#fff200;
+  outline:none;
+   flex: 1 1 auto;
+   min-width: 0;
+}
+
+.input-row button{
+  margin-right: 0;
+}
+
+#tg-input:focus{
+  border-color:rgba(255,242,0,.95);
+  box-shadow:0 0 0 4px rgba(255,242,0,.18);
+}
+
+#tg-word{
+  font-size:56px;
+  font-weight:800;
+  margin:18px 0 10px;
+  letter-spacing:.5px;
+  text-shadow:0 6px 18px rgba(0,0,0,.35);
+}
+
+#tg-player,#tg-score,#tg-best,#tg-timer,#tg-bonus{
+  display:inline-block;
+  margin-right:14px;
+  font-size:22px;
+  padding:8px 10px;
+  border-radius:12px;
+  background:rgba(0,0,0,.18);
+  border:1px solid rgba(255,242,0,.25);
+}
+
+#tg-time{
+  font-size:18px;
+  padding:8px 12px;
+  margin:10px 0 14px;
+  border-radius:12px;
+  border:1px solid rgba(255,242,0,.55);
+  background:rgba(0,0,0,.28);
+  color:#fff200;
+  outline:none;
+}
+
+#tg-login input{
+  font-size:20px;
+  padding:10px 12px;
+  margin-right:10px;
+  margin-bottom:10px;
+  border-radius:12px;
+  border:1px solid rgba(255,242,0,.55);
+  background:rgba(0,0,0,.28);
+  color:#fff200;
+  outline:none;
+}
+
+@media (max-width: 900px){
+  .game-area{
+    min-height: auto;
+    align-items: flex-start;
+    padding: 18px 16px 40px;
+  }
+
+  .input-row{
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #tg-input{
+    width: 100%;
+  }
+
+  .input-row button{
+    width: 100%;
+  }
+}

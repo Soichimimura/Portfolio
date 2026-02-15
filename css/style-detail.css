@@ -26,6 +26,7 @@ html {
   line-height: 1.7;
   
   height: 110px;
+  
 }
 
 .header-inner {
@@ -46,7 +47,7 @@ html {
 .logo img {
  
   
-    height: 95px;
+    height: 100px;
   width: auto;
   display: block;
 transform: translateY(2px);
@@ -55,10 +56,7 @@ animation: fade1 1.5s ease forwards;
 animation-delay:0.2s;
 }
 
-@keyframes fade1{
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
+
 
 
 .language {
@@ -83,10 +81,6 @@ animation-delay:0.2s;
   animation-delay:0.6s;
 }
 
-@keyframes fade1{
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
 
 
 
@@ -114,11 +108,6 @@ animation-delay:0.2s;
   animation-delay:1.2s;
 }
 
-@keyframes fade1{
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
 
 .lang-btn-en {
   width: 160px;
@@ -134,10 +123,6 @@ animation-delay:0.2s;
   animation-delay:0.9s;
 }
 
-@keyframes fade1{
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
  
 
 .nav ul {
@@ -173,10 +158,11 @@ animation-delay:0.2s;
 .main-nav li{
   position: relative;
   display: inline-block;
+  font-size: 17px;
   
 }
 
-.fade1{
+.fade0{
  opacity:0;
   animation: fade1 1.5s ease forwards;
   animation-delay:1.5s;
@@ -186,10 +172,20 @@ animation-delay:0.2s;
   to   { opacity: 1; }
 }
 
+.fade1{
+ opacity:0;
+  animation: fade1 1.5s ease forwards;
+  animation-delay:1.8s;
+}
+@keyframes fade1{
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
 .fade2{
  opacity:0;
   animation: fade1 2s ease forwards;
-  animation-delay:1.8s;
+  animation-delay:2.1s;
 }
 @keyframes fade1{
   from { opacity: 0; }
@@ -200,7 +196,7 @@ animation-delay:0.2s;
 .fade3{
  opacity:0;
   animation: fade1 2s ease forwards;
-  animation-delay:2.1s;
+  animation-delay:2.4s;
 }
 @keyframes fade1{
   from { opacity: 0; }
@@ -231,6 +227,8 @@ animation-delay:0.2s;
   border-bottom: 5.5px solid #fff200;
   padding: 1.5rem 0;
   overflow: hidden;
+  background:repeating-linear-gradient(to bottom, rgba(255,242,0,.08) 0 1px, transparent 1px 54px);
+
 }
 
 .design-inner{
@@ -250,7 +248,7 @@ animation-delay:0.2s;
   margin: 0 auto;
   opacity:0;
   animation: fade1 1.5s ease forwards;
-  animation-delay:2.6s;
+  animation-delay:2.7s;
 }
 
 @keyframes fade1{
@@ -259,23 +257,13 @@ animation-delay:0.2s;
 }
 
 
-
-.design-inner{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-
-
-
-
-
  .main{
 
    width: 100%;
   margin: 0 auto;
   font-family: var(--font-sans);
+  background:repeating-linear-gradient(to bottom, rgba(255,242,0,.08) 0 1px, transparent 1px 54px);
+
  }
 
  .section{
@@ -306,6 +294,8 @@ animation-delay:0.2s;
 }
 
 .reason1{
+  
+
   margin: 3rem 0 2rem 0;
   font-weight: bold;
   line-height: 1.12;
@@ -314,6 +304,13 @@ animation-delay:0.2s;
   color: #fff200;
   position: relative;
   display: inline-block;
+  max-width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
+  opacity:0;
+  animation: fade1 1.5s ease forwards;
+  animation-delay:3s;
+  
 }
 
 .reason1::after{
@@ -325,12 +322,9 @@ animation-delay:0.2s;
   height: 4px;
   background: #fff200;
   animation: underline 1s ease forwards;
+   animation-delay: 8s;
+  
 }
-
-.reason1::after{
-  animation-delay: 7s;
-}
-
 
 @keyframes underline{
   from{ width: 0; }
@@ -354,6 +348,9 @@ animation-delay:0.2s;
    color: #fff200;
    text-align: center;
    line-height: 2.2;
+   opacity:0;
+  animation: fade1 1.5s ease forwards;
+  animation-delay:3.3s;
 }
 
 .content1-1 p{
@@ -384,6 +381,9 @@ animation-delay:0.2s;
    text-align: center; 
    margin: 2rem auto 5rem;
      position: relative;
+     opacity:0;
+  animation: fade1 1.5s ease forwards;
+  animation-delay:3.6s;
   
 }
 
@@ -411,21 +411,32 @@ animation-delay:0.2s;
 .study-content img{
   width: 55%;
   height: auto;
+  opacity:0;
+  animation: fade1 1.5s ease forwards;
+  animation-delay:3.9s;
 }
 
 .text-area{
+
+  margin-top: 1.3rem;
   width: 40%;
   display: flex;
   flex-direction: column;
+  opacity:0;
+  animation: fade1 1.5s ease forwards;
+  animation-delay:4.2s;
 }
 
 
 .Explain{
-   margin-top: 1.5rem;
+   margin-top: 2.3rem;
   font-weight: bold;
   color: #ffe600;
   line-height: 1.8;
   font-size:clamp(1rem,2.2vw,1.1rem);
+  opacity:0;
+  animation: fade1 1.5s ease forwards;
+  animation-delay:4.5s;
 }
 
 
@@ -438,7 +449,120 @@ animation-delay:0.2s;
     margin-bottom: 1rem;
 }
 
+@keyframes fade1{
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
 
+@media (max-width: 900px) {
+    .header-inner{
+    grid-template-columns: 1fr;
+    gap: 10px;
+    justify-items: center;
+    padding: 10px 0;
+  }
 
+  .page-header{
+    height: auto;
+    padding: 10px 16px;
+  }
 
+  .logo img{
+    height: 72px;
+    transform: none;
+  }
 
+  .language{
+    justify-self: center;
+  }
+
+  .language-buttons{
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin-top: 8px;
+  }
+
+  .lang-btn-en,
+  .lang-btn-jp{
+    width: clamp(140px, 44vw, 200px);
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 12px;
+    display: inline-block;
+  }
+
+  .nav{
+    justify-self: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .nav ul{
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    gap: 22px 26px;
+  }
+
+  .page-header {
+    line-height: 1.4;
+  }
+
+  .section {
+    padding: 2.2rem 1rem;
+  }
+
+  .content1-1 {
+    margin-top: 2rem;
+    line-height: 2.0;
+  }
+
+  .study-content {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .study-content img {
+    width: 100%;
+    max-width: 680px;
+  }
+
+  .text-area {
+    width: 100%;
+    margin-top: 0;
+    
+  }
+
+  .study-section {
+    padding: 1.2rem 1rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    height: 60px;
+  }
+
+  .lang-btn-en,
+  .lang-btn-jp {
+    width: 100%;
+    max-width: 320px;
+    font-size: 15px;
+    padding: 10px 12px;
+  }
+
+  .nav ul {
+    gap: 10px 26px;
+  }
+
+  .main-nav li::after {
+    bottom: -4px;
+    height: 2px;
+  }
+
+  .study-what {
+    margin: 1.6rem auto 2rem;
+  }
+}
