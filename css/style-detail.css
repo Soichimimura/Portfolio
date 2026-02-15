@@ -232,9 +232,10 @@ animation-delay:0.2s;
 }
 
 .design-inner{
-  width: 100%;
+  width: 90%;
   max-width: 1050px;
   margin: 0 auto;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -248,7 +249,7 @@ animation-delay:0.2s;
   margin: 0 auto;
   opacity:0;
   animation: fade1 1.5s ease forwards;
-  animation-delay:2.7s;
+  animation-delay:2.8s;
 }
 
 @keyframes fade1{
@@ -509,6 +510,7 @@ animation-delay:0.2s;
     line-height: 1.4;
   }
 
+
   .section {
     padding: 2.2rem 1rem;
   }
@@ -538,9 +540,17 @@ animation-delay:0.2s;
   .study-section {
     padding: 1.2rem 1rem 1rem;
   }
+
+  .Explain{
+    margin-bottom: 3.5rem;  
+  }
 }
 
 @media (max-width: 480px) {
+
+
+  
+  
   .logo img {
     height: 60px;
   }
@@ -556,6 +566,12 @@ animation-delay:0.2s;
   .nav ul {
     gap: 10px 26px;
   }
+
+    .design-inner{
+    margin-right: 1.5rem;
+
+  }
+
 
   .main-nav li::after {
     bottom: -4px;

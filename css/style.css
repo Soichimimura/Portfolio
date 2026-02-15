@@ -6,17 +6,12 @@ html {
 
  body{
    margin: 0;
-   background: #472f91;
+   background: #1E006D;
    font-family:
   "Yu Gothic Medium",
   "Yu Gothic",
   "Hiragino Kaku Gothic Pro",
    sans-serif;
-
-
-    
-
-  background: #472f91;
  }
 
  a{
@@ -31,7 +26,7 @@ html {
  
 
 .page-header {
-  background: #472f91;
+  background: #1E006D;
   padding: 0 40px ;
   border-bottom: 5px solid #fff200;
   margin-bottom: 0px;
@@ -135,7 +130,7 @@ animation-delay:0.5s;
   width: 160px;
   font-size: 20px;
   background: #fff200;
-  color: #472f91;
+  color: #4a387c;
   font-weight: bold;
   cursor: pointer;
   min-width: 0;   
@@ -249,13 +244,14 @@ animation-delay:0.5s;
 .who{
   
   margin-top: 20px;
-   position: absolute;
+  
    top: 50%;
    left: 50%;
-   transform: translate(-50%, -50%);
+   
    text-align: center;
    width: 100%;
-   
+   position: static;
+  transform: none;
 }
 
 
@@ -303,8 +299,16 @@ animation-delay:0.5s;
 
 
 
+
 .main-visual{
   position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  padding: 0 12px;
 
   background-image:
     linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
@@ -313,8 +317,11 @@ animation-delay:0.5s;
   background-size: cover;
   background-position: center;
   min-height: 100vh;
+  min-height: 100svh;
+
   border-bottom: 5px solid #fff200;
 }
+
 
 .timeline{
   padding: 60px 20px 20px 20px;
@@ -329,7 +336,7 @@ animation-delay:0.5s;
 .timeline-row{
   display: flex;
   align-items: flex-start;
-  gap: 60x;
+  gap: 60px;
   margin-left: 90px;
   flex-wrap: wrap;
   
@@ -386,7 +393,7 @@ animation-delay:0.5s;
   display: inline-block;
   padding: 20px 150px;
   background: #fff200;
-  color: #472f91;
+  color: #4a387c;
   font-weight: bold;
   text-decoration: none;
   border-radius: 2px;
@@ -469,7 +476,7 @@ animation-delay:0.5s;
   }
 
   .who-am-i{
-    font-size: clamp(3rem, 12vw, 6rem);
+    font-size: clamp(3rem, 14vw, 6.5rem);
     line-height: 1.05;
   }
 

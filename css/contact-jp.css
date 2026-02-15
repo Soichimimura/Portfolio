@@ -434,15 +434,20 @@ body::before{
 
   .page-header {
     line-height: 1.4;
+    position: relative;
+    z-index: 10;
   }
 
   body::before{
-    inset: 190px 0 0 0;
+    inset: 120px 0 0 0;
+    z-index: 0;
   }
 
   .hello{
     margin:40px 0 20px;
   }
+
+
 }
 
 @media (max-width: 480px){
