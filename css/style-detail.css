@@ -104,8 +104,8 @@ animation-delay:0.2s;
   min-width: 0;   
   text-decoration: none;
   opacity:0;
-  animation: fade1 1.5s ease forwards;
-  animation-delay:1.2s;
+  animation: fade1 1.3s ease forwards;
+  animation-delay:1s;
 }
 
 
@@ -119,8 +119,8 @@ animation-delay:0.2s;
   min-width: 0;   
   text-decoration: none;
   opacity:0;
-  animation: fade1 1.5s ease forwards;
-  animation-delay:0.9s;
+  animation: fade1 1.3s ease forwards;
+  animation-delay:0.8s;
 }
 
  
@@ -164,8 +164,8 @@ animation-delay:0.2s;
 
 .fade0{
  opacity:0;
-  animation: fade1 1.5s ease forwards;
-  animation-delay:1.5s;
+  animation: fade1 1.2s ease forwards;
+  animation-delay:1.25s;
 }
 @keyframes fade1{
   from { opacity: 0; }
@@ -174,8 +174,8 @@ animation-delay:0.2s;
 
 .fade1{
  opacity:0;
-  animation: fade1 1.5s ease forwards;
-  animation-delay:1.8s;
+  animation: fade1 1.2s ease forwards;
+  animation-delay:1.45s;
 }
 @keyframes fade1{
   from { opacity: 0; }
@@ -184,8 +184,8 @@ animation-delay:0.2s;
 
 .fade2{
  opacity:0;
-  animation: fade1 2s ease forwards;
-  animation-delay:2.1s;
+  animation: fade1 1.2s ease forwards;
+  animation-delay:1.65s;
 }
 @keyframes fade1{
   from { opacity: 0; }
@@ -195,8 +195,8 @@ animation-delay:0.2s;
 
 .fade3{
  opacity:0;
-  animation: fade1 2s ease forwards;
-  animation-delay:2.4s;
+  animation: fade1 1.2s ease forwards;
+  animation-delay:1.85s;
 }
 @keyframes fade1{
   from { opacity: 0; }
@@ -249,7 +249,7 @@ animation-delay:0.2s;
   margin: 0 auto;
   opacity:0;
   animation: fade1 1.5s ease forwards;
-  animation-delay:2.8s;
+  animation-delay:2.5s;
 }
 
 @keyframes fade1{
@@ -384,7 +384,7 @@ animation-delay:0.2s;
      position: relative;
      opacity:0;
   animation: fade1 1.5s ease forwards;
-  animation-delay:3.6s;
+  animation-delay:3.8s;
   
 }
 
@@ -414,7 +414,7 @@ animation-delay:0.2s;
   height: auto;
   opacity:0;
   animation: fade1 1.5s ease forwards;
-  animation-delay:3.9s;
+  animation-delay:4.3s;
 }
 
 .text-area{
@@ -425,7 +425,7 @@ animation-delay:0.2s;
   flex-direction: column;
   opacity:0;
   animation: fade1 1.5s ease forwards;
-  animation-delay:4.2s;
+  animation-delay:4.8s;
 }
 
 

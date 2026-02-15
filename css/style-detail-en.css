@@ -80,7 +80,7 @@ animation-delay:0.2s;
   color: #fff200;
   opacity:0;
   animation: fade1 1.5s ease forwards;
-  animation-delay:0.6s;
+  animation-delay:0.5s;
 }
 
 @keyframes fade1{
@@ -110,8 +110,8 @@ animation-delay:0.2s;
   min-width: 0;   
   text-decoration: none;
   opacity:0;
-  animation: fade1 1.5s ease forwards;
-  animation-delay:1.2s;
+  animation: fade1 1.3s ease forwards;
+  animation-delay:0.9s;
 }
 
 @keyframes fade1{
@@ -130,8 +130,8 @@ animation-delay:0.2s;
   min-width: 0;   
   text-decoration: none;
   opacity:0;
-  animation: fade1 1.5s ease forwards;
-  animation-delay:0.9s;
+  animation: fade1 1.3s ease forwards;
+  animation-delay:0.7s;
 }
 
 @keyframes fade1{
@@ -181,27 +181,27 @@ animation-delay:0.2s;
 
 .fade0{
  opacity:0;
-  animation: fade1 1.5s ease forwards;
-  animation-delay:1.5s;
+  animation: fade1 1.2s ease forwards;
+  animation-delay:1.2s;
 }
 
 
 .fade1{
  opacity:0;
-  animation: fade1 1.5s ease forwards;
-  animation-delay:1.8s;
+  animation: fade1 1.2s ease forwards;
+  animation-delay:1.4s;
 }
 .fade2{
  opacity:0;
-  animation: fade1 2s ease forwards;
-  animation-delay:2.1s;
+  animation: fade1 1.2s ease forwards;
+  animation-delay:1.6s;
 }
 
 
 .fade3{
  opacity:0;
-  animation: fade1 2s ease forwards;
-  animation-delay:2.4s;
+  animation: fade1 1.2s ease forwards;
+  animation-delay:1.8s;
 }
 
 
@@ -248,7 +248,7 @@ animation-delay:0.2s;
   margin: 0 auto;
   opacity:0;
   animation: fade1 1.5s ease forwards;
-  animation-delay:2.8s;
+  animation-delay:2.5s;
 }
 
 
@@ -305,6 +305,9 @@ animation-delay:0.2s;
   color: #fff200;
   position: relative;
   display: inline-block;
+   opacity:0;
+  animation: fade1 1.4s ease forwards;
+  animation-delay:5s;
 }
 
 
@@ -320,6 +323,9 @@ animation-delay:0.2s;
   overflow-wrap: anywhere;
   position: relative;
   display: inline-block;
+   opacity:0;
+  animation: fade1 1.2s ease forwards;
+  animation-delay:5.2s;
 }
 
 .reason1::after,
@@ -359,10 +365,15 @@ animation-delay:0.2s;
    color: #fff200;
    text-align: center;
    line-height: 2.2;
+     opacity:0;
+  animation: fade1 1.4s ease forwards;
+  animation-delay:5.5s;
+  
 }
 
 .content1-1 p{
   margin-bottom: 4rem;
+ 
 }
 
 .fullwidth-divider{
@@ -390,6 +401,9 @@ animation-delay:0.2s;
    text-align: center; 
    margin: 2rem auto 3rem;
      position: relative;
+       opacity:0;
+  animation: fade1 1.4s ease forwards;
+  animation-delay:6.2s;
   
 }
 
@@ -433,6 +447,15 @@ animation-delay:0.2s;
   color: #ffe600;
   line-height: 1.8;
   font-size:clamp(1rem,2.5vw,1.1rem);
+    opacity:0;
+  animation: fade1 1.4s ease forwards;
+  animation-delay:7.1s;
+}
+
+.photo{
+ opacity:0;
+  animation: fade1 1.4s ease forwards;
+  animation-delay:6.6s;
 }
 
 
@@ -443,6 +466,9 @@ animation-delay:0.2s;
   font-weight: bold;
   font-size: 1.8rem;
     margin-bottom: 1rem;
+      opacity:0;
+  animation: fade1 1.4s ease forwards;
+  animation-delay:7s;
 }
 
 @media (max-width: 900px) {

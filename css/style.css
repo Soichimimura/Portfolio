@@ -55,8 +55,8 @@ html {
   display: block;
 transform: translateY(2px);
 opacity:0;
-animation: fade1 2s ease forwards;
-animation-delay:0.5s;
+animation: fade1 1.5s ease forwards;
+animation-delay:0.2s;
 
 }
 
@@ -85,8 +85,8 @@ animation-delay:0.5s;
   margin: 0 0 4px 0;        /* 下余白を小さく */
   color: #fff200;
   opacity:0;
-  animation: fade1 2s ease forwards;
-  animation-delay:1s;
+  animation: fade1 1.5s ease forwards;
+  animation-delay:0.6s;
 }
 
 @keyframes fade1{
@@ -116,8 +116,8 @@ animation-delay:0.5s;
   min-width: 0;   
   text-decoration: none;
   opacity:0;
-  animation: fade1 2s ease forwards;
-  animation-delay:2s;
+  animation: fade1 1.5s ease forwards;
+  animation-delay:1.2s;
 }
 
 @keyframes fade1{
@@ -136,8 +136,8 @@ animation-delay:0.5s;
   min-width: 0;   
   text-decoration: none;
   opacity:0;
-  animation: fade1 2s ease forwards;
-  animation-delay:1.5s;
+  animation: fade1 1.5s ease forwards;
+  animation-delay:0.9s;
 }
 
 @keyframes fade1{
@@ -185,8 +185,8 @@ animation-delay:0.5s;
 
 .fade0{
  opacity:0;
-  animation: fade1 2s ease forwards;
-  animation-delay:2.5s;
+  animation: fade1 1.2s ease forwards;
+  animation-delay:1.5s;
 }
 @keyframes fade1{
   from { opacity: 0; }
@@ -195,8 +195,8 @@ animation-delay:0.5s;
 
 .fade1{
  opacity:0;
-  animation: fade1 2s ease forwards;
-  animation-delay:3.0s;
+  animation: fade1 1.2s ease forwards;
+  animation-delay:1.7s;
 }
 @keyframes fade1{
   from { opacity: 0; }
@@ -205,8 +205,8 @@ animation-delay:0.5s;
 
 .fade2{
  opacity:0;
-  animation: fade1 2s ease forwards;
-  animation-delay:3.5s;
+  animation: fade1 1.2s ease forwards;
+  animation-delay:1.9s;
 }
 @keyframes fade1{
   from { opacity: 0; }
@@ -216,8 +216,8 @@ animation-delay:0.5s;
 
 .fade3{
  opacity:0;
-  animation: fade1 2s ease forwards;
-  animation-delay:4.0s;
+  animation: fade1 1.2s ease forwards;
+  animation-delay:2.1s;
 }
 @keyframes fade1{
   from { opacity: 0; }
@@ -266,8 +266,8 @@ animation-delay:0.5s;
    line-height: 1.2;
 
    opacity: 0;
-  animation: instant 1s linear forwards;
-  animation-delay: 4.5s;
+  animation: instant 1.4s linear forwards;
+  animation-delay: 3s;
    
 }
 
@@ -281,8 +281,8 @@ animation-delay:0.5s;
    color: #fff56c;
 
    opacity: 0;
-  animation: instant2 1s linear forwards;
-  animation-delay: 4.8s;
+  animation: instant2 1.2s linear forwards;
+  animation-delay: 3.5s;
 }
 
 @keyframes instant{
@@ -353,9 +353,9 @@ animation-delay:0.5s;
 .timeline-img.left{
   width: 520px;
   opacity: 0;
-  transform: translateY(-200px);
-  animation: fadeDown 3s ease forwards;
-  animation-delay:8s;
+  transform: translateY(-150px);
+  animation: fadeDown 2.5s ease forwards;
+  animation-delay:6s;
 }
 
 .timeline-img.right{
@@ -364,9 +364,9 @@ animation-delay:0.5s;
     margin-top: -92px;
 
     opacity: 0;
-  transform: translateY(-170px);
-  animation: fadeDown 5s ease forwards;
-  animation-delay: 9s;
+  transform: translateY(-150px);
+  animation: fadeDown 2.5s ease forwards;
+  animation-delay: 7s;
 
  
 }
@@ -387,9 +387,7 @@ animation-delay:0.5s;
 }
 
 .btn-detail{
-
   font-size: 40px;
-
   display: inline-block;
   padding: 20px 150px;
   background: #fff200;
@@ -398,15 +396,21 @@ animation-delay:0.5s;
   text-decoration: none;
   border-radius: 2px;
   transition: 0.3s;
+  pointer-events: none;
+  opacity: 0;
+  animation: fadeIn 1.4s linear forwards 3.8s,
+             pulse 1s ease-in-out infinite 2s;
+}
 
- 
-  animation: pulse 1s ease-in-out infinite;
-  
+@keyframes fadeIn{
+  from{ opacity: 0; }
+  to  { opacity: 1;
+  pointer-events: auto; }
 }
 
 @keyframes pulse{
   0%,100%{ transform: scale(1); }
-  50%{ transform: scale(1.05); }
+  50%     { transform: scale(1.05); }
 }
 
 .btn-detail:hover{

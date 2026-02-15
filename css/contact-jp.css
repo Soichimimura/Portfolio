@@ -40,7 +40,7 @@
   display: block;
 transform: translateY(2px);
 opacity:0;
-animation: fade1 1.8s ease forwards;
+animation: fade1 1.4s ease forwards;
 animation-delay:0.2s;
 }
 
@@ -68,8 +68,8 @@ animation-delay:0.2s;
   margin: 0 0 4px 0;        /* 下余白を小さく */
   color: #fff200;
   opacity:0;
-  animation: fade1 1.8s ease forwards;
-  animation-delay:0.6s;
+  animation: fade1 1.4s ease forwards;
+  animation-delay:0.5s;
 }
 
 
@@ -96,8 +96,8 @@ animation-delay:0.2s;
   min-width: 0;   
   text-decoration: none;
   opacity:0;
-  animation: fade1 1.8s ease forwards;
-  animation-delay: 1.4s;
+  animation: fade1 1.2s ease forwards;
+  animation-delay: 1s;
 }
 
 @keyframes fade1{
@@ -116,8 +116,8 @@ animation-delay:0.2s;
   min-width: 0;   
   text-decoration: none;
   opacity:0;
-  animation: fade1 1.8s ease forwards;
-  animation-delay:1s;
+  animation: fade1 1.2s ease forwards;
+  animation-delay:0.8s;
 }
 
 @keyframes fade1{
@@ -166,30 +166,30 @@ animation-delay:0.2s;
 
 .fade0{
  opacity:0;
-  animation: fade1 1.5s ease forwards;
-  animation-delay:1.5s;
+  animation: fade1 1.2s ease forwards;
+  animation-delay:1.3s;
 }
 
 
 .fade1{
  opacity:0;
-  animation: fade1 1.8s ease forwards;
-  animation-delay:1.8s;
+  animation: fade1 1.2s ease forwards;
+  animation-delay:1.5s;
 }
 
 
 .fade2{
  opacity:0;
-  animation: fade1 1.8s ease forwards;
-  animation-delay:2.2s;
+  animation: fade1 1.2s ease forwards;
+  animation-delay:1.7s;
 }
 
 
 
 .fade3{
  opacity:0;
-  animation: fade1 1.8s ease forwards;
-  animation-delay:2.6s;
+  animation: fade1 1.2s ease forwards;
+  animation-delay:1.9s;
 }
 
 
@@ -251,8 +251,8 @@ body::before{
   font-weight:700;
   margin:40px 0 30px;
   opacity:0;
-  animation: fade1 1.6s ease forwards;
-  animation-delay:3.2s;
+  animation: fade1 1.5s ease forwards;
+  animation-delay:2.3s;
 }
 
 .hello{
@@ -265,8 +265,8 @@ body::before{
   letter-spacing:.10em;
   margin:60px 0 65px;
   opacity:0;
-  animation: fade1 1.6s ease forwards;
-  animation-delay:3.8s;
+  animation: fade1 1.5s ease forwards;
+  animation-delay:2.6s;
 }
 
 .form{display:grid;
@@ -361,16 +361,16 @@ body::before{
   animation:fade1 1.2s ease forwards;
 }
 
-.form .row:nth-of-type(1){animation-delay:4.0s}
-.form .row:nth-of-type(2){animation-delay:4.3s}
-.form .row:nth-of-type(3){animation-delay:4.6s}
-.form .row:nth-of-type(4){animation-delay:4.9s}
-.form .row:nth-of-type(5){animation-delay:5.2s}
+.form .row:nth-of-type(1){animation-delay:2.9s}
+.form .row:nth-of-type(2){animation-delay:3.1s}
+.form .row:nth-of-type(3){animation-delay:3.3s}
+.form .row:nth-of-type(4){animation-delay:3.5s}
+.form .row:nth-of-type(5){animation-delay:3.7s}
 
 .send{
   opacity:0;
   animation:fade1 1.2s ease forwards;
-  animation-delay:5.8s;
+  animation-delay:4s;
 }
 
 

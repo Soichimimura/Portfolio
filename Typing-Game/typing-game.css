@@ -1,16 +1,4 @@
 
-.typing-page{
-  --header-h: 110px;
-   min-height: 100svh;
-  min-height: 100dvh;
-  display: grid;
-  grid-template-rows: auto 1fr;
-  overflow-x: hidden;
-
-  background-color:#1E006D;
-  background:repeating-linear-gradient(to bottom, rgba(255,242,0,.15) 0 1px, transparent 1px 54px);
-  color:#fff200;
-}
 .typing-page .page-header{
   height: var(--header-h);
   padding: 0 24px;
@@ -42,18 +30,6 @@
 }
 
 
-
-.typing-page{
-  background-color:#1E006D;
-  background:repeating-linear-gradient(to bottom, rgba(255,242,0,.15) 0 1px, transparent 1px 54px);
-  color:#fff200;
-  box-sizing: border-box;
-  --header-h: 110px;
-   min-height: 100vh;
-
-}
-
-
 .typing-page .language{
   justify-self: center;
   text-align: center;
@@ -71,6 +47,22 @@
 .typing-page .nav a{
   font-size: 17px;
   justify-self: end;
+}
+
+
+.typing-page{
+  --header-h: 110px;
+   min-height: 100svh;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  overflow-x: hidden;
+
+  background-color:#1E006D;
+background-image:repeating-linear-gradient(to bottom, rgba(255,242,0,.15) 0 1px, transparent 1px 54px);
+
+  color:#fff200;
+    box-sizing: border-box;
 }
 
 
@@ -103,7 +95,7 @@
   opacity: 0;
   transform: translateY(10px);
   animation: tgLoginIn 1.5s ease forwards;
-  animation-delay: 2.7s;
+  animation-delay: 2.5s;
 }
 
 @media (orientation: portrait){
