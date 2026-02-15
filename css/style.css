@@ -480,7 +480,7 @@ animation-delay:0.2s;
   }
 
   .who-am-i{
-    font-size: clamp(3rem, 14vw, 6.5rem);
+    font-size: clamp(3rem, 12vw, 6.5rem);
     line-height: 1.05;
   }
 
